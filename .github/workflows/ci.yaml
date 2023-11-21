@@ -9,10 +9,10 @@ jobs:
     steps: # 워크플로우의 단계
     - uses: actions/checkout@v2 # 저장소의 코드를 체크아웃
 
-    - name: Use Node.js 12.x # 이름 정의
+    - name: Use Node.js 19.6.0 # 이름 정의
       uses: actions/setup-node@v1 # Node.js를 설정
       with:
-        node-version: 12.x # Node.js의 버전 정의
+        node-version: 19.6.0 # Node.js의 버전 정의
 
     - name: Install dependencies # 이름 정의
       run: npm ci # 의존성 설치
