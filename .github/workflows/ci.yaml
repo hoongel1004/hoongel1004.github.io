@@ -17,8 +17,8 @@ jobs:
     - name: Install dependencies # 이름 정의
       run: npm ci # 의존성 설치
 
-    - name: Build # 이름 정의
-      run: npm run build # 빌드 실행
+    - name: Start Application # 'Build' 대신 'Start Application'으로 변경
+      run: npm start # 'npm run build' 대신 'npm start'로 변경
 
     - name: Test # 이름 정의
       run: npm run test # 테스트 실행
